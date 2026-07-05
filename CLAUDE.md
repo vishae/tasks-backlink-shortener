@@ -1,0 +1,1 @@
+@/Users/serena/Obsidian Vaults/Vault of Everything/CLAUDE.md
