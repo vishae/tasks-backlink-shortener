@@ -5,3 +5,4 @@ main.js
 data.json
 .env
 .claude/settings.local.json
+CLAUDE.md
