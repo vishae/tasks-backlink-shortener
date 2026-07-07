@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Shortens the backlink the Tasks plugin displays under each task to just the note basename.",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "dev": "node esbuild.config.mjs",
     "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "test": "node --test backlink.test.ts",
     "version": "node version-bump.mjs && git add manifest.json versions.json"
   },
   "keywords": [],

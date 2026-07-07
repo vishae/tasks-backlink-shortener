@@ -1,21 +1,5 @@
 import { MarkdownPostProcessor, MarkdownRenderChild, Plugin } from "obsidian";
-
-function toBasename(text: string): string | null {
-	if (!text) return null;
-	const [pathPart] = text.split(" > ");
-	const segments = pathPart.split("/");
-	const last = segments[segments.length - 1];
-	return last.endsWith(".md") ? last.slice(0, -3) : last;
-}
-
-function shortenBacklinksIn(containerEl: HTMLElement) {
-	containerEl.querySelectorAll<HTMLAnchorElement>(".tasks-backlink a.internal-link").forEach((link) => {
-		const shortened = toBasename(link.textContent ?? "");
-		if (shortened !== null && shortened !== link.textContent) {
-			link.textContent = shortened;
-		}
-	});
-}
+import { shortenBacklinksIn } from "./backlink";
 
 class BacklinkWatcher extends MarkdownRenderChild {
 	private observer: MutationObserver;
