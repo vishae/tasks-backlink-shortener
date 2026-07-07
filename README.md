@@ -26,7 +26,9 @@ After:
 
 ## Installation
 
-This isn't in Obsidian's community plugin browser (yet). To install manually:
+**From Obsidian (recommended):** Go to **Settings → Community plugins → Browse**, search for "Tasks Backlink Shortener", install, and enable it.
+
+**Manually:**
 
 1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](../../releases).
 2. Create a folder named `tasks-backlink-shortener` inside your vault's `.obsidian/plugins/` folder.
