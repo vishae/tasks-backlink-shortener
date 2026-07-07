@@ -1,6 +1,6 @@
 {
   "name": "tasks-backlink-shortener",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shortens the backlink the Tasks plugin displays under each task to just the note basename.",
   "main": "main.js",
   "type": "module",
