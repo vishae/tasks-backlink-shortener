@@ -1,6 +1,6 @@
 # Tasks Backlink Shortener
 
-An [Obsidian](https://obsidian.md) plugin that shortens the backlink the [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) plugin displays under each task, showing just the note name instead of the full path, heading, and `.md` extension.
+An [Obsidian](https://obsidian.md) plugin that shortens the backlink the [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) plugin displays under each task. By default it shows just the note name instead of the full path, heading, and `.md` extension — and a setting lets you choose from four display modes (see [Display modes](#display-modes) below).
 
 This was built with [Claude Code](https://claude.com/claude-code) to scratch a personal itch, not to become a feature-rich plugin — it does exactly one small thing, and I released it in case someone else was looking for the same solution. If you want it to do more, the code is small and simple enough that you could point an AI assistant at it and ask for whatever tweaks fit your setup.
 
@@ -19,6 +19,15 @@ After:
 ☐ Feed the sourdough starter before it files a complaint
     (2026-03-14 (Sat))
 ```
+
+## Display modes
+
+Under **Settings → Community plugins → Tasks Backlink Shortener**, pick how backlinks are shown. Only one mode is active at a time. Using the example above (`/Kitchen/Bread Diaries/2026/2026-03-14 (Sat).md > Evening Chores`):
+
+- **Filename + header** — path and `.md` removed, name and heading kept: `2026-03-14 (Sat) > Evening Chores`
+- **Header only** — everything except the heading removed: `Evening Chores`. When a task has no heading, this falls back to showing the filename.
+- **Filename only** *(default)* — path, heading, and `.md` removed: `2026-03-14 (Sat)`. This is the original behaviour, and what you get on a fresh install or after upgrading.
+- **Custom text** — every backlink is replaced with a fixed string you type in. This replaces *all* backlink text, including Tasks' short-mode link — if you want an emoji, add it to your custom text.
 
 ## Requirements
 
