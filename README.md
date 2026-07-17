@@ -2,7 +2,7 @@
 
 An [Obsidian](https://obsidian.md) plugin that shortens the backlink the [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) plugin displays under each task. By default it shows just the note name instead of the full path, heading, and `.md` extension — and a setting lets you choose from four display modes (see [Display modes](#display-modes) below).
 
-This was built with [Claude Code](https://claude.com/claude-code) to scratch a personal itch, not to become a feature-rich plugin — it does exactly one small thing, and I released it in case someone else was looking for the same solution. If you want it to do more, the code is small and simple enough that you could point an AI assistant at it and ask for whatever tweaks fit your setup.
+This was built with [Claude Code](https://claude.com/claude-code) to scratch a personal itch, not to become a feature-rich plugin — it does exactly one small thing, and I released it in case someone else was looking for the same solution.
 
 ## Example
 
