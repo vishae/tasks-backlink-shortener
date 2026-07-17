@@ -1,7 +1,7 @@
 {
 	"id": "tasks-backlink-shortener",
 	"name": "Tasks Backlink Shortener",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"minAppVersion": "1.0.0",
 	"description": "Shortens the backlink the Tasks plugin displays under each task to just the note basename, instead of the full path, heading, and .md extension.",
 	"author": "Serena",
