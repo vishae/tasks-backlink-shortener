@@ -22,12 +22,35 @@ After:
 
 ## Display modes
 
-Under **Settings → Community plugins → Tasks Backlink Shortener**, pick how backlinks are shown. Only one mode is active at a time. Using the example above (`/Kitchen/Bread Diaries/2026/2026-03-14 (Sat).md > Evening Chores`):
+Under **Settings → Community plugins → Tasks Backlink Shortener**, pick how backlinks are shown. Only one mode is active at a time. Each example below shortens the same task from the [Example](#example) above.
 
-- **Filename + header** — path and `.md` removed, name and heading kept: `2026-03-14 (Sat) > Evening Chores`
-- **Header only** — everything except the heading removed: `Evening Chores`. When a task has no heading, this falls back to showing the filename.
-- **Filename only** *(default)* — path, heading, and `.md` removed: `2026-03-14 (Sat)`. This is the original behaviour, and what you get on a fresh install or after upgrading.
-- **Custom text** — every backlink is replaced with a fixed string you type in. This replaces *all* backlink text, including Tasks' short-mode link — if you want an emoji, add it to your custom text.
+**Filename + header** — path and `.md` removed, name and heading kept:
+
+```text
+☐ Feed the sourdough starter before it files a complaint
+    (2026-03-14 (Sat) > Evening Chores)
+```
+
+**Header only** — everything except the heading removed (falls back to the filename when a task has no heading):
+
+```text
+☐ Feed the sourdough starter before it files a complaint
+    (Evening Chores)
+```
+
+**Filename only** *(default)* — path, heading, and `.md` removed. The original behaviour, and what you get on a fresh install or after upgrading:
+
+```text
+☐ Feed the sourdough starter before it files a complaint
+    (2026-03-14 (Sat))
+```
+
+**Custom text** — every backlink is replaced with a fixed string you type in (here, `📓 recipe notes`). This replaces *all* backlink text, including Tasks' short-mode link — if you want an emoji, add it to your custom text:
+
+```text
+☐ Feed the sourdough starter before it files a complaint
+    (📓 recipe notes)
+```
 
 ## Requirements
 
